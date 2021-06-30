@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) => {
             
             
         } else {
-            callback(undefined, body.current.weather_descriptions[0] + '. A temperatura agora esta ' + body.current.temperature + '°. Com sensação térmica de ' + body.current.feelslike + '°. Humidade do ar' + body.current.humidity + '%')
+            callback(undefined, body.current.weather_descriptions[0] + '. A temperatura agora esta ' + body.current.temperature + '°. Com sensação térmica de ' + body.current.feelslike + '°. Humidade do ar ' + body.current.humidity + '%.')
         }
     })
 }
